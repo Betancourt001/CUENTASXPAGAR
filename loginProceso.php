@@ -10,9 +10,9 @@
 	//print_r($datos);
 
 	if ($datos === FALSE) {
-		header('Location: login.php');
+		header('Location: index.php');
 	}elseif($sentencia->rowCount() == 1){
 		$_SESSION['nombre'] = $datos->nombre_usu;
-		header('Location: index.php');
+		header('Location: principal.php');
 	}
 ?>
