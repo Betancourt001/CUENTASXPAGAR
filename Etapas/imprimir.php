@@ -8,7 +8,7 @@
 
 
 	if (!isset($_SESSION['nombre'])) {
-		header('Location: ../login.php');
+		header('Location: ../index.php');
 	}elseif(isset($_SESSION['nombre'])){
 		include '../model/conexion.php';
 		$id = $_GET['id'];

@@ -8,7 +8,7 @@
 
 
 	if (!isset($_SESSION['nombre'])) {
-		header('Location: ../login.php');
+		header('Location: ../index.php');
 	}elseif(isset($_SESSION['nombre'])){
 		include '../model/conexion.php';
 		$id = $_GET['id'];
@@ -70,7 +70,7 @@
 	  <div class="col-sm-8">
 		  
 	  	<a type="button" role="button" class="btn btn-outline-light btn-sm" 
-				href="../index.php">Inicio <i class="" type="button"></i></a>
+				href="../principal.php">Inicio <i class="" type="button"></i></a>
 			<a type="button" role="button" class="btn btn-outline-light btn-sm" 
 				href="../Produccion/produccion.php">Cuentas x Pagar <i class="" type="button"></i></a>	
 			<a type="button" role="button" class="btn btn-outline-light btn-sm" 
